@@ -1,0 +1,114 @@
+/* Style général */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #f5f5f5;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+/* Accessibilité : lien "Passer au contenu principal" */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #004080;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 10px;
+}
+
+/* En-tête */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  background-color: #0066cc;
+  padding: 10px;
+  display: inline-block;
+  width: 80%;
+}
+
+/* Image dans nav */
+nav img {
+  width: 10%;
+}
+
+/* Liste de navigation (désactivée selon les consignes) */
+/*
+li {
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  list-style-type: none;
+}
+*/
+
+/* Contenu principal */
+main {
+  background-color: #ffffff;
+  font-size: 18px;
+  padding: 20px;
+}
+
+/* Titre principal */
+h1 {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color: #ffcc00;
+}
+
+/* Paragraphe */
+p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Pied de page */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Grille (section .grid) */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-evenly;
+  align-items: start;
+  row-gap: 30px;
+  margin-top: 20px;
+}
+
+/* Images uniquement dans .grid */
+.grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Section flex */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.flex img {
+  width: 32%;
+  border-radius: 10px;
+}
+
